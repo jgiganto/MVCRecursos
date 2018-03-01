@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+ 
 
 namespace MVCRecursos.Controllers
 {
@@ -10,7 +11,9 @@ namespace MVCRecursos.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Saludo = Resources.Saludos.Titulo;
             return View();
+           
         }
 
         public ActionResult About()
